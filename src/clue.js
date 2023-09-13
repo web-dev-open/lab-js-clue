@@ -196,9 +196,14 @@ function pickMystery() {
 
 // ITERATION 3
 
-function revealMystery() { }
-
-
+function revealMystery(object) {
+  const firstName = object.suspect.firstName;
+  const lastName = object.suspect.lastName;
+  const weapon = object.weapon.name;
+  const room = object.room.name;
+  const revealMessage = `${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in the ${room}`;
+  return revealMessage;
+}
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
