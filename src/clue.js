@@ -201,7 +201,7 @@ function revealMystery(object) {
   const lastName = object.suspect.lastName;
   const weapon = object.weapon.name;
   const room = object.room.name;
-  const revealMessage = `${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in the ${room}`;
+  const revealMessage = `${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in the ${room}!`;
   return revealMessage;
 }
 
